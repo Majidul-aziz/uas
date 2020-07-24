@@ -1,0 +1,280 @@
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+}
+.sidebar
+{
+    width: 100%;
+    height: 100%;
+    background:#1e88e5;
+    position: absolute;
+    z-index: 100;
+}
+ul
+{
+    padding: 0px;
+    margin: -2px 0px 0px;
+}
+ul li
+{
+    list-style-type: none;
+    /* border-bottom: 1px solid #c7c5bf; */
+}
+ul li a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0px 18px 25px;
+    transform: all 200ms ease-in;
+}
+ul li a:hover
+{
+    text-decoration: none;
+    color: white;
+    
+}
+ul li a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+ul li a:focus
+{
+    text-decoration: none;
+}
+ul li a span
+{
+    display: inline-block;
+}
+ul li a .fa-angle-right
+{
+    margin-right: 20px;
+}
+ul ul 
+{
+    display: none;
+}
+
+.img
+{
+   
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+}
+.navbar-brand
+{
+    color: white;
+}
+.marquee
+{
+    font-weight: 700    ;
+    color: white;
+}
+.navbar_left
+{
+    padding-right: 0 25px;
+}
+.navbar_right img
+{
+    width: 30px;
+}
+.navbar_left img
+{
+    width: 60px;
+    float: left;
+    margin-right: auto;
+    /* display: none; */
+    
+}
+.navbar_right 
+{
+    justify-content: space-between;
+    display: flex;
+}
+.navbar_left 
+{
+    justify-content: space-between;
+    display: flex;
+}
+.navbar_right .icon_wrap
+{
+    cursor: pointer;
+}
+.navbar_left .icon_wrap
+{
+    cursor: pointer;
+}
+.navbar_right .profil
+{
+    position: relative;
+}
+.profil_show
+{
+    position: absolute;
+    top: 48px;
+    right: -15px;
+    background: #1e88e5;
+    width: 350px;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.125),
+    -10px -10px 30px rgba(0, 0, 0, 0.125);
+    display: none;
+}
+.profil_show::before
+{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+}
+.profil .icon_wrap
+{
+    display: flex;
+    align-items:center;
+}
+.profil .name{
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar_right .icon_wrap:hover,
+.profil.active .icon_wrap
+{
+    color: white;
+}
+.profil .profil_show
+{
+    width: 200px;
+}
+.profil .profil_show::before
+{
+    right: 10px;
+}
+.profil .profil_show ul li{
+    border-bottom: 1px solid rgba(8, 188, 243, 0.945);
+}
+.profil .profil_show ul li:last-child
+{
+    border-bottom: 0px ;
+}
+.profil .profil_show ul li a{
+    display: block;
+    padding: 15px 35px;
+    position: relative;
+}
+.profil .profil_show ul li a .picon
+{
+    width: 30px;
+    display: inline-block;
+}
+.profil .profil_show ul li a:hover{
+    color: cornsilk;
+    background: #7a97d1;
+
+}
+.profil .profil_show ul li.profil a:hover
+{
+ background: transparent;
+ cursor: default;
+ color: #7f8db0;
+}
+
+.menu ul.menu-content li a:hover
+{
+    background: transparent;
+ cursor: default;
+ color: yellow;
+}
+.profil .profil_show ul li .btn
+{
+    height: 32px;
+    width: 180px;
+    background: rgb(60, 231, 180);
+    padding: 7px 10px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px  8px;
+}
+.profil .profil_show ul li .btn:hover
+{
+    background: #ace60ca4;
+}
+
+.profil.active .profil_show
+{
+    display: block;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b3b7bbe6;
+    color: white;
+    text-align: center;
+  }
+  .isi
+  {
+    /* padding: 20px 10px 20px ; */
+    background-color: white;
+    /* margin: 10px; */
+    border: 1px solid rgb(81, 201, 223);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 10px 10px 8px #888888   
+  }
+  .isi .title{
+    height:40px;
+    line-height:30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:#1BA39C;
+    font-size:18px;
+    font-weight:bold;
+    font-family:verdana;
+    display:block;
+    color:white;
+    display:block;
+    /* padding: 20px 10px 20px 10px; */
+    padding:10px;
+    border: 1px solid gray;
+    border-bottom:none;
+  }
+  .isi .isi_data
+  {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+  }
+  
+ 
+/* apa bila media yang membuka seprti laptop lcdpc */
+@media(min-width :768px)
+{
+    .sidebar
+    {
+        width: 240px;
+       
+    }
+    .content
+    {
+        margin-left: 250px;
+        
+    }
+    .inner
+    {
+        padding: 16px;
+    }
+}
